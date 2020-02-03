@@ -17,12 +17,43 @@ You can find the original project specification at: https://www.theodinproject.c
 ```javascript
 ```
 
-1.1. run npm init in your project directory to generate a package.json file.
-```javascript
+1.1. run <strong>npm init</strong> in your project directory to generate a package.json file.
+```sh
+$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (restaurant-page)
+version: (1.0.0)
+.
+.
 ```
 
-2.0. run npm install --save-dev webpack to install webpack to the node_modules directory of your project.
-```javascript
+2.0. run <strong>npm install --save-dev webpack</strong> to install webpack to the node_modules directory of your project.
+```sh
+$ npm install --save-dev webpack
+npm WARN rollback Rolling back node-pre-gyp@0.14.0 failed (this is probably harmless): EINVAL: invalid argument, scandir '/mnt/d/Google_Drive/Microverse/5.Javascript/3.webpack/restaurant-page/node_modules/fsevents/node_modules'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ webpack@4.41.5
+updated 1 package and audited 5288 packages in 14.329s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+$ npm fund
+restaurant-page@1.0.0
+└─┬ webpack@4.41.5
 ```
 
 *Quick tip: the node_modules folder can get really big. It is customary to add a .gitignore file to your project so that you don’t have to sync the contents of node_modules to github. The dependencies that are stored there can be installed from your package.json by running npm install, so you don’t need to sync them.
