@@ -400,3 +400,5 @@ This project is [MIT](lic.url) licensed.
 |       ├── navbar.js
 |       └── social-media.js
 ```
+
+7. navbar.js
