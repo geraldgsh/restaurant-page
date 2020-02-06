@@ -10,4 +10,3 @@ const filling = document.getElementById('content');
 filling.appendChild(navbar());
 filling.appendChild(jumbotron());
 filling.appendChild(menu());
-filling.appendChild(gallery());

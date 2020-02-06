@@ -1,6 +1,6 @@
 const navbar = () => {
   const head = document.createElement('nav');
-  head.classList.add('navbar', 'navbar-expand-lg', 'navbar', 'bg-white', 'static-top');
+  head.classList.add('navbar', 'navbar-expand', 'bg-white', 'navbar-default', 'fixed-top');
   const container = document.createElement('div');
   container.classList.add('container');
   const logo = document.createElement('a');
