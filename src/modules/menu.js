@@ -114,8 +114,6 @@ const menu = () => {
     }
   ];
 
-  const amenu = document.createElement('a');
-  amenu.setAttribute('name', 'menu');
   const foodlist = document.createElement('div');
   foodlist.id = 'menu';
   foodlist.classList.add('foodlist', 'content');

@@ -1,6 +1,4 @@
 const jumbotron = () => {
-  const home = document.createElement('a');
-  home.setAttribute('name', 'home');
   const jumbo = document.createElement('div');
   jumbo.id = 'home';
   jumbo.classList.add('jumbotron', 'jumbotron-fluid');
@@ -20,7 +18,7 @@ const jumbotron = () => {
 
   jumbo.appendChild(container);
 
-  return home, jumbo;
+  return jumbo;
 };
 
 export default jumbotron;

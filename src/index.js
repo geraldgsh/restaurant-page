@@ -2,7 +2,7 @@ import navbar from "./modules/navbar";
 import jumbotron from "./modules/jumbotron";
 import menu from "./modules/menu";
 import gallery from "./modules/gallery";
-// import contact from "./modules/contact";
+import contact from "./modules/contact";
 // import socialMedia from "./modules/socialMedia";
 // import footer from "./modules/footer";
 
@@ -11,3 +11,4 @@ filling.appendChild(navbar());
 filling.appendChild(jumbotron());
 filling.appendChild(menu());
 filling.appendChild(gallery());
+filling.appendChild(contact());
