@@ -76,18 +76,18 @@ const gallery = () => {
 
     const caption = document.createElement('div');
     caption.classList.add('caption');
-    caption.innerHTML = `
-                        <h3>${food.title}</h3>
-                        <p>${food.meta}</p>`
+    caption.innerHTML = `<h3>${food.title}</h3>
+                         <p>${food.meta}</p>`
     thumb.appendChild(caption);  
   });
 
   const displayLink = document.createElement('script');
   displayLink.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js');
   galleryContainer.appendChild(displayLink);
-  const baguette = document.createAttribute('script');
+  const baguette = document.createElement('script');
   baguette.innerHTML = `baguetteBox.run('.tz-gallery');`
-  galleryContainer.appendChild(baguette); 
+  galleryContainer.appendChild(baguette);
+
 
   return galleryContainer;
   

@@ -213,7 +213,6 @@ Gallery
 body {
   font: normal 16px sans-serif;
   min-height: 100vh;
-  /*padding-top: 91px;*/
 }
 
 .gallery-container h1 {
@@ -275,7 +274,7 @@ body {
 }
 
 /* ================================
-Contact Grid
+Contacts
 ================================= */
 .contact-info .fa {
   padding-right: 5px;
