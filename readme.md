@@ -377,37 +377,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
-
-
-
-
-
-1. npm init
-2. npm add webpack
-3. npm install webpack webpack-cli --save-dev
-4. write webpack.config.js
-5. yarn build (main.js)
-
-6. create JS file structure
-```bash
-├── src
-|   ├── modules
-|       ├── contact.js
-|       ├── footer.js
-|       ├── gallery.js
-|       ├── jumbotron.js
-|       ├── menu.js
-|       ├── navbar.js
-|       └── social-media.js
-```
-
-7. navbar.js
-
-8. npm install url-loader --save-dev
-9. npm install --save-dev css-loader
-10. npm install --save-dev file-loader
-11. npm install --save-dev style-loader
-
-
-JavaScript DOM Crash Course - Part 1
-resource; https://www.youtube.com/watch?v=0ik6X4DJKCc
