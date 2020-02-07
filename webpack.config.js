@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const path = require('path');
 
 module.exports = {
@@ -22,11 +23,11 @@ module.exports = {
           'file-loader',
         ],
       },
-      { 
+      {
         test: /\.(png|jpg)$/,
         include: path.join(__dirname, 'dist/media'),
-        loader: 'file-loader' 
-     },
+        loader: 'file-loader',
+      },
     ],
   },
 };

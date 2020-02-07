@@ -28,7 +28,7 @@ const contact = () => {
   col2.classList.add('col-md-7', 'col-sm-10');
   row.appendChild(col2);
 
-  const fade = document.createElement('div')
+  const fade = document.createElement('div');
   fade.classList.add('wow', 'fadeInUp');
   fade.setAttribute('data-wow-delay', '0.4s');
   col2.appendChild(fade);
@@ -123,7 +123,7 @@ const contact = () => {
               <br>
               <p><i class='fa fa-map-marker'></i> 456 New Street 22000, New York City, USA</p>
               <p><i class='fa fa-comment'></i> <a href='mailto:info@wokthisway.com'>info@wokthisway.com</a></p>
-              <p><i class='fa fa-phone'></i> 010-020-0340</p>`
+              <p><i class='fa fa-phone'></i> 010-020-0340</p>`;
   info.appendChild(add);
   return parallax;
 };

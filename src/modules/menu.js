@@ -175,9 +175,9 @@ const menu = () => {
     dishImg.appendChild(aTag);
 
     const img = document.createElement('img');
-    img.setAttribute('src', soup.img)
+    img.setAttribute('src', soup.img);
     img.setAttribute('alt', soup.title);
-    img.classList.add('img-circle')
+    img.classList.add('img-circle');
     aTag.appendChild(img);
 
     const col4 = document.createElement('div');
@@ -246,7 +246,7 @@ const menu = () => {
     dishImg.appendChild(aTag);
 
     const img = document.createElement('img');
-    img.setAttribute('src', main.img)
+    img.setAttribute('src', main.img);
     img.setAttribute('alt', main.title);
     img.classList.add('img-circle');
     aTag.appendChild(img);

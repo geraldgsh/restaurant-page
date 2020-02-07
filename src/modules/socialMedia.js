@@ -40,7 +40,7 @@ const socialMedia = () => {
                   </span>
                   </a>
                 </li>
-              </ul>`
+              </ul>`;
   col.appendChild(heading);
 
   return connect;

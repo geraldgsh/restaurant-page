@@ -60,7 +60,7 @@ const gallery = () => {
     col.classList.add('col-sm-6', 'col-md-4');
     row.appendChild(col);
 
-    const thumb = document.createElement('div')
+    const thumb = document.createElement('div');
     thumb.classList.add('thumbnail');
     col.appendChild(thumb);
 
