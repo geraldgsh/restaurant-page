@@ -15,6 +15,7 @@ const jumbotron = () => {
   <hr class="my-4">
   <p>Authentic Stir Fried Chinese Cuisine.</p>`;
   jumbo.appendChild(container);
+
   return jumbo;
 };
 export default jumbotron;

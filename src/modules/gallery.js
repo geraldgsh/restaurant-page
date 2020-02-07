@@ -38,46 +38,58 @@ const gallery = () => {
       title: 'CHIVE STIR FRY PORK',
       meta: 'Garlic Chive Stir Fry with Pork or Cang Ying Tou (苍蝇头) literally translates to “Flies’ Heads” in Chinese.',
     },
-  ]
+  ];
   const galleryContainer = document.createElement('div');
   galleryContainer.classList.add('container', 'gallery-container');
   galleryContainer.id = 'gallery';
+
   const foodGallery = document.createElement('h1');
   foodGallery.innerHTML = 'Food Gallery';
   galleryContainer.appendChild(foodGallery);
+
   const tzGallery = document.createElement('div');
   tzGallery.classList.add('tz-gallery');
   galleryContainer.appendChild(tzGallery);
+
   const row = document.createElement('div');
   row.classList.add('row');
   tzGallery.appendChild(row);
+
   foodItem.forEach((food) => {
     const col = document.createElement('div');
     col.classList.add('col-sm-6', 'col-md-4');
     row.appendChild(col);
+
     const thumb = document.createElement('div')
     thumb.classList.add('thumbnail');
     col.appendChild(thumb);
+
     const lightbox = document.createElement('a');
     lightbox.classList.add('lightbox');
     lightbox.setAttribute('href', food.img);
     thumb.appendChild(lightbox);
+
     const image = document.createElement('img');
     image.setAttribute('src', food.thumb);
     image.setAttribute('alt', food.title);
     lightbox.appendChild(image);
+
     const caption = document.createElement('div');
     caption.classList.add('caption');
     caption.innerHTML = `<h3>${food.title}</h3>
                          <p>${food.meta}</p>`;
     thumb.appendChild(caption);
   });
+
   const displayLink = document.createElement('script');
   displayLink.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js');
   galleryContainer.appendChild(displayLink);
+
   const baguette = document.createElement('script');
   baguette.innerHTML = `baguetteBox.run('.tz-gallery');`;
   galleryContainer.appendChild(baguette);
+
   return galleryContainer;
-}
+};
+
 export default gallery;
