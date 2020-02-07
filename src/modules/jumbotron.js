@@ -14,7 +14,7 @@ const jumbotron = () => {
   <p class="lead"><strong>Wok this way!</strong></p>
   <hr class="my-4">
   <p>Authentic Wok Stirred Fried Chinese Cuisine.</p>
-  <a class="btn btn-primary btn-lg" href="#contact" role="button">Make a Reservation</a>`;
+  <a class="btn btn-primary btn-lg" id="#contact" href="#contact" role="button">Make a Reservation</a>`;
 
   jumbo.appendChild(container);
 

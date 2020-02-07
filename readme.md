@@ -402,3 +402,12 @@ This project is [MIT](lic.url) licensed.
 ```
 
 7. navbar.js
+
+8. npm install url-loader --save-dev
+9. npm install --save-dev css-loader
+10. npm install --save-dev file-loader
+11. npm install --save-dev style-loader
+
+
+JavaScript DOM Crash Course - Part 1
+resource; https://www.youtube.com/watch?v=0ik6X4DJKCc
