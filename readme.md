@@ -369,7 +369,7 @@ This is a small App for libraries built with JS, CSS & HTML.
 Checkout our [wikipage](https://github.com/geraldgsh/restaurant-page/wiki) for more details. 
 
 #### Live Demo
-[Demo](https://geraldgsh.github.io/restaurant-page)
+[Demo]()
 
 #### Getting Started
 Clone repo and run index.html
