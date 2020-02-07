@@ -196,7 +196,14 @@ document.body.appendChild(component());
 ```
 
 4.0. Create a bare-bones home page for a restaurant. Include an image, headline, and some copy about how wonderful the restaurant is. It’s okay to hard-code these into the HTML for now just to see how they look on the page.
-```javascript
+```bash
+./src/modules
+
+├── contact.js
+├── gallery.js
+├── jumbotron.js
+├── menu.js
+├── socialMedia.js
 ```
 
 5.0. Now remove those elements from the HTML (so leave only the <html>, <body>, and <div id="content"> tags) and instead create them by using Javascript only, e.g. by appending each new element to the div#contentonce the page is first loaded. Since we’re all set up to write our code in multiple files write this initial page-load function inside of it’s own module and then import and call it inside of index.js.
@@ -223,19 +230,43 @@ Done in 1.42s.
 
 6.1. Put the contents of each ‘tab’ inside of it’s own module. Each module will export a function that creates a div element, adds the appropriate content and styles to that element and then appends it to the DOM.
 ```javascript
+./src/modules/menu.js
+
+const homePage = document.getElementById('#home');
+const menuPage = document.getElementById('#menu');
+const galleryPage = document.getElementById('#gallery');
+const contactPage = document.getElementById('#contact');
+
+const togglePage = (event) => {
+  if (event.target === homePage) {
+    start();
+  } else if (event.target === menuPage) {
+    filling.innerHTML = '';
+    filling.appendChild(menu());
+  } else if (event.target === galleryPage) {
+    filling.innerHTML = '';
+    filling.appendChild(gallery());
+  } else {
+    filling.innerHTML = '';
+    filling.appendChild(contact());
+    filling.appendChild(socialMedia());
+  }
+};
 ```
 
 6.2. Write the tab-switching logic inside of index.js. You should have event listeners for each tab that wipes out the current contents and then runs the correct ‘tab module’ to populate it again.
 ```javascript
+./src/modules/menu.js
+
+homePage.addEventListener('click', togglePage);
+menuPage.addEventListener('click', togglePage);
+galleryPage.addEventListener('click', togglePage);
+contactPage.addEventListener('click', togglePage);
 ```
 
 7.0. If you are using GitHub pages to host your completed page you need to do a tiny bit more work to get it to show up. After running webpack the full bundled version of your site is available in the dist folder, but GH pages is looking for an index.html in the root directory of your project.
-```javascript
-```
 
 7.1. Simply follow the instructions on this gist. EZPZ!
-```javascript
-```
 
 ### Linter Setup
 
