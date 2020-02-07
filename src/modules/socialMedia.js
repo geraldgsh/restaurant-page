@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const socialMedia = () => {
   const connect = document.createElement('div');
   connect.classList.add('contact-header');
@@ -43,6 +44,6 @@ const socialMedia = () => {
   col.appendChild(heading);
 
   return connect;
-}
+};
 
 export default socialMedia;

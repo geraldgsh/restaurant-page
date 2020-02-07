@@ -1,3 +1,5 @@
+/* eslint-disable quotes */
+/* eslint-disable linebreak-style */
 const navbar = () => {
   const navLinks = [
     {
@@ -34,13 +36,13 @@ const navbar = () => {
   const siteMenu = document.createElement('div');
   siteMenu.classList.add('collapse', 'navbar-collapse');
   siteMenu.id = 'navbar-collapse';
-  container.appendChild(siteMenu);  
+  container.appendChild(siteMenu);
 
   const unlist = document.createElement('ul');
   unlist.classList.add('navbar-nav', 'ml-auto');
   siteMenu.appendChild(unlist);
 
-  navLinks.forEach(nav =>  {
+  navLinks.forEach((nav) => {
     const navItem = document.createElement('li');
     navItem.classList.add('nav-item');
     unlist.appendChild(navItem);
@@ -51,9 +53,9 @@ const navbar = () => {
     tab.id = nav.link;
     tab.innerHTML = nav.name;
     navItem.appendChild(tab);
-  })  
+  });
 
   return head;
-}
+};
 
 export default navbar;

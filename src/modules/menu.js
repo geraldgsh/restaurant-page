@@ -1,5 +1,6 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable linebreak-style */
 const menu = () => {
-
   const starterItem = [
     {
       link: 'https://thewoksoflife.com/hot-sour-soup/',
@@ -44,7 +45,6 @@ const menu = () => {
       price: '$9'
     }
   ];
-
   const mainItem = [
     {
       link: 'https://thewoksoflife.com/steak-stir-fry/',
@@ -89,7 +89,6 @@ const menu = () => {
       price: '$12'
     }
   ];
-
   const dessertItem = [
     {
       link: 'https://thewoksoflife.com/red-bean-soup/',
@@ -113,15 +112,13 @@ const menu = () => {
       price: '$7'
     }
   ];
-
   const foodlist = document.createElement('div');
   foodlist.id = 'menu';
   foodlist.classList.add('foodlist', 'content');
-  
   const container = document.createElement('div');
   container.classList.add('container');
   foodlist.appendChild(container);
-  
+
   const row1 = document.createElement('div');
   row1.classList.add('row');
   container.appendChild(row1);
@@ -147,7 +144,7 @@ const menu = () => {
   col2.classList.add('col-lg-4', 'col-md-4', 'col-sm-6', 'col-xs-12', 'mb40');
   row2.appendChild(col2);
 
-  const menuBlock1 =  document.createElement('div');
+  const menuBlock1 = document.createElement('div');
   menuBlock1.classList.add('menu-block');
   col2.appendChild(menuBlock1);
 
@@ -156,7 +153,7 @@ const menu = () => {
   menuTitle1.innerHTML = 'Starter';
   menuBlock1.appendChild(menuTitle1);
 
-  starterItem.forEach(soup=> {
+  starterItem.forEach((soup) => {
     const menuContent = document.createElement('div');
     menuContent.classList.add('menu-content');
     menuBlock1.appendChild(menuContent);
@@ -186,40 +183,39 @@ const menu = () => {
     const col4 = document.createElement('div');
     col4.classList.add('col-lg-9', 'col-md-9', 'col-sm-9', 'col-xs-12');
     row.appendChild(col4);
+
     const dishContent = document.createElement('div');
     dishContent.classList.add('dish-content');
     col4.appendChild(dishContent);
 
     const dishTitle = document.createElement('h5');
     dishTitle.classList.add('dish-title');
-    dishTitle.innerHTML = `<a href='#'>${soup.title}</a>`
+    dishTitle.innerHTML = `<a href='#'>${soup.title}</a>`;
     dishContent.appendChild(dishTitle);
+
     const dishLink = document.createElement('a');
-    dishLink.setAttribute('href', '#')
+    dishLink.setAttribute('href', '#');
     dishLink.inner = soup.title;
     dishTitle.appendChild(dishLink);
 
     const dishMeta = document.createElement('span');
     dishMeta.classList.add('dish-meta');
-    dishMeta.innerHTML = soup.meta
+    dishMeta.innerHTML = soup.meta;
     dishContent.appendChild(dishMeta);
 
     const dishPrice = document.createElement('div');
     dishPrice.classList.add('dish-price');
     dishContent.appendChild(dishPrice);
 
-    const priceTag =  document.createElement('p');
+    const priceTag = document.createElement('p');
     priceTag.innerHTML = soup.price;
-    dishPrice.appendChild(priceTag);    
-
+    dishPrice.appendChild(priceTag);
   });
-
-  
   const col5 = document.createElement('div');
   col5.classList.add('col-lg-4', 'col-md-4', 'col-sm-6', 'col-xs-12', 'mb40');
   row2.appendChild(col5);
 
-  const menuBlock2 =  document.createElement('div');
+  const menuBlock2 = document.createElement('div');
   menuBlock2.classList.add('menu-block');
   col5.appendChild(menuBlock2);
 
@@ -228,7 +224,7 @@ const menu = () => {
   menuTitle2.innerHTML = 'Main Course';
   menuBlock2.appendChild(menuTitle2);
 
-  mainItem.forEach(main=> {
+  mainItem.forEach((main) => {
     const menuContent = document.createElement('div');
     menuContent.classList.add('menu-content');
     menuBlock2.appendChild(menuContent);
@@ -252,45 +248,46 @@ const menu = () => {
     const img = document.createElement('img');
     img.setAttribute('src', main.img)
     img.setAttribute('alt', main.title);
-    img.classList.add('img-circle')
+    img.classList.add('img-circle');
     aTag.appendChild(img);
 
     const col7 = document.createElement('div');
     col7.classList.add('col-lg-9', 'col-md-9', 'col-sm-9', 'col-xs-12');
     row.appendChild(col7);
+
     const dishContent = document.createElement('div');
     dishContent.classList.add('dish-content');
     col7.appendChild(dishContent);
 
     const dishTitle = document.createElement('h5');
     dishTitle.classList.add('dish-title');
-    dishTitle.innerHTML = `<a href='#'>${main.title}</a>`
+    dishTitle.innerHTML = `<a href='#'>${main.title}</a>`;
     dishContent.appendChild(dishTitle);
+
     const dishLink = document.createElement('a');
-    dishLink.setAttribute('href', '#')
+    dishLink.setAttribute('href', '#');
     dishLink.inner = main.title;
     dishTitle.appendChild(dishLink);
 
     const dishMeta = document.createElement('span');
     dishMeta.classList.add('dish-meta');
-    dishMeta.innerHTML = main.meta
+    dishMeta.innerHTML = main.meta;
     dishContent.appendChild(dishMeta);
 
     const dishPrice = document.createElement('div');
     dishPrice.classList.add('dish-price');
     dishContent.appendChild(dishPrice);
 
-    const priceTag =  document.createElement('p');
+    const priceTag = document.createElement('p');
     priceTag.innerHTML = main.price;
-    dishPrice.appendChild(priceTag);    
-
+    dishPrice.appendChild(priceTag);
   });
 
   const col8 = document.createElement('div');
   col8.classList.add('col-lg-4', 'col-md-4', 'col-sm-6', 'col-xs-12', 'mb40');
   row2.appendChild(col8);
 
-  const menuBlock3 =  document.createElement('div');
+  const menuBlock3 = document.createElement('div');
   menuBlock3.classList.add('menu-block');
   col8.appendChild(menuBlock3);
 
@@ -299,7 +296,7 @@ const menu = () => {
   menuTitle3.innerHTML = 'Dessert';
   menuBlock3.appendChild(menuTitle3);
 
-  dessertItem.forEach(dessert => {
+  dessertItem.forEach((dessert) => {
     const menuContent = document.createElement('div');
     menuContent.classList.add('menu-content');
     menuBlock3.appendChild(menuContent);
@@ -321,44 +318,42 @@ const menu = () => {
     dishImg.appendChild(aTag);
 
     const img = document.createElement('img');
-    img.setAttribute('src', dessert.img)
+    img.setAttribute('src', dessert.img);
     img.setAttribute('alt', dessert.title);
-    img.classList.add('img-circle')
+    img.classList.add('img-circle');
     aTag.appendChild(img);
 
     const col10 = document.createElement('div');
     col10.classList.add('col-lg-9', 'col-md-9', 'col-sm-9', 'col-xs-12');
     row.appendChild(col10);
+
     const dishContent = document.createElement('div');
     dishContent.classList.add('dish-content');
     col10.appendChild(dishContent);
 
     const dishTitle = document.createElement('h5');
     dishTitle.classList.add('dish-title');
-    dishTitle.innerHTML = `<a href='#'>${dessert.title}</a>`
+    dishTitle.innerHTML = `<a href='#'>${dessert.title}</a>`;
     dishContent.appendChild(dishTitle);
+
     const dishLink = document.createElement('a');
-    dishLink.setAttribute('href', '#')
+    dishLink.setAttribute('href', '#');
     dishLink.inner = dessert.title;
     dishTitle.appendChild(dishLink);
 
     const dishMeta = document.createElement('span');
     dishMeta.classList.add('dish-meta');
-    dishMeta.innerHTML = dessert.meta
+    dishMeta.innerHTML = dessert.meta;
     dishContent.appendChild(dishMeta);
 
     const dishPrice = document.createElement('div');
     dishPrice.classList.add('dish-price');
     dishContent.appendChild(dishPrice);
 
-    const priceTag =  document.createElement('p');
+    const priceTag = document.createElement('p');
     priceTag.innerHTML = dessert.price;
-    dishPrice.appendChild(priceTag);    
-
+    dishPrice.appendChild(priceTag);
   });
-
-
   return foodlist;
-}
-
+};
 export default menu;

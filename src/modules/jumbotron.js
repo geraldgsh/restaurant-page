@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const jumbotron = () => {
   const jumbo = document.createElement('div');
   jumbo.id = 'home';
@@ -6,7 +7,6 @@ const jumbotron = () => {
   <video autoplay muted loop poster="media/flaming-wok.png">    
     <source src="media/wok-fire.mp4" type="video/mp4">
   </video>`;
-
   const container = document.createElement('div');
   container.classList.add('container', 'text-white');
   container.innerHTML = `
@@ -14,10 +14,7 @@ const jumbotron = () => {
   <p class="lead"><strong>Wok this way!</strong></p>
   <hr class="my-4">
   <p>Authentic Stir Fried Chinese Cuisine.</p>`;
-
   jumbo.appendChild(container);
-
   return jumbo;
 };
-
 export default jumbotron;

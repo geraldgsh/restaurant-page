@@ -1,15 +1,16 @@
-import jumbotron from "./modules/jumbotron";
-import menu from "./modules/menu";
-import gallery from "./modules/gallery";
-import contact from "./modules/contact";
-import socialMedia from "./modules/socialMedia";
+/* eslint-disable linebreak-style */
+import jumbotron from './modules/jumbotron';
+import menu from './modules/menu';
+import gallery from './modules/gallery';
+import contact from './modules/contact';
+import socialMedia from './modules/socialMedia';
 
 const filling = document.getElementById('content');
 
 const start = () => {
   filling.innerHTML = '';
   filling.appendChild(jumbotron());
-}
+};
 
 start();
 
