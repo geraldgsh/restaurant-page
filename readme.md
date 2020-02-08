@@ -387,7 +387,9 @@ https://github.com/geraldgsh/restaurant-page
 👤 **Author**
 
 Github: [geraldgsh](https://github.com/geraldgsh)
+
 Twitter: [geraldgsh](https://github.com/geraldgsh)
+
 Linkedin: [Gerald Goh](https://www.linkedin.com/geraldgsh)
 
 ## 🤝 Contributing
