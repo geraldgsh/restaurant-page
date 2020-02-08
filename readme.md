@@ -361,15 +361,25 @@ Vi. Click "Restart Game" to clear the board.
 
 vii. Click on "End Current Game" to reset players name to blank and wins to 0.
 
-#### book Library
-This is a small App for libraries built with JS, CSS & HTML.
+#### Steps to publish Page to Githack
+
+1. Navigate to "dist/index.html" on GitHub Page Repo then copy URL (step #1) as illustrated below
+
+![]()
+
+2. Go to https://raw.githack.com/, paste GitHub directory into input box (step #2) to generate URL (step #3) illustrated below.
+
+![]()
+
+#### Restaurant Page
+This is a restaurant app built with Webpack, Bootstrap, JS, CSS & HTML.
 
 ### Wiki
 
 Checkout our [wikipage](https://github.com/geraldgsh/restaurant-page/wiki) for more details. 
 
 #### Live Demo
-[Demo]()
+[Demo](https://rawcdn.githack.com/geraldgsh/restaurant-page/1c4fd834fbec34e3545362c9bab5d38f269fc689/dist/index.html)
 
 #### Getting Started
 Clone repo and run index.html
