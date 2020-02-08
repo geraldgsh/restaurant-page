@@ -365,11 +365,11 @@ vii. Click on "End Current Game" to reset players name to blank and wins to 0.
 
 1. Navigate to "dist/index.html" on GitHub Page Repo then copy URL (step #1) as illustrated below
 
-![]()
+![](https://github.com/geraldgsh/restaurant-page/blob/development/dist/media/Github-index.jpg?raw=true)
 
 2. Go to https://raw.githack.com/, paste GitHub directory into input box (step #2) to generate URL (step #3) illustrated below.
 
-![]()
+![](https://github.com/geraldgsh/restaurant-page/blob/development/dist/media/githack.jpg?raw=true)
 
 #### Restaurant Page
 This is a restaurant app built with Webpack, Bootstrap, JS, CSS & HTML.
