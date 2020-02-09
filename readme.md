@@ -345,21 +345,28 @@ Start ESlint with this command.
 eslint script.js
 ```
 
-#### Test Procedure
+#### Setup Webpack watch
 
-i. Click "Start New Game". Page should prompt "Names can't be blank".
+Webpack can watch files and recompile whenever they change. Turn on watch mode. This means that after the initial build, webpack will continue to watch for changes in any of the resolved files.
 
-ii. Fill in names and click "Start New Game". 9 x 9 grid will appear
+```javascript
+./package.json
 
-iii. Play the game. After each turn, page prompt player's name whose turn is next. 
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant Page",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
+  },
+  .
+  .
+```
 
-iV. If player wins, there modal aleart appears and announces winner's name. 
-
-V. Click alert's exit button will initiate new round. Winner's wins will increment by one.
-
-Vi. Click "Restart Game" to clear the board.
-
-vii. Click on "End Current Game" to reset players name to blank and wins to 0.
+Run "yarn watch" to start.
 
 #### Steps to publish Page to Githack
 
@@ -379,7 +386,7 @@ This is a restaurant app built with Webpack, Bootstrap, JS, CSS & HTML.
 Checkout our [wikipage](https://github.com/geraldgsh/restaurant-page/wiki) for more details. 
 
 #### Live Demo
-[Demo](https://rawcdn.githack.com/geraldgsh/restaurant-page/1c4fd834fbec34e3545362c9bab5d38f269fc689/dist/index.html)
+[Demo](https://raw.githack.com/geraldgsh/restaurant-page/development/dist/index.html)
 
 #### Getting Started
 Clone repo and run index.html
