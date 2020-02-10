@@ -386,7 +386,7 @@ This is a restaurant app built with Webpack, Bootstrap, JS, CSS & HTML.
 Checkout our [wikipage](https://github.com/geraldgsh/restaurant-page/wiki) for more details. 
 
 #### Live Demo
-[Demo](https://raw.githack.com/geraldgsh/restaurant-page/development/dist/index.html)
+[Demo](https://raw.githack.com/geraldgsh/restaurant-page/master/dist/index.html)
 
 #### Getting Started
 Clone repo and run index.html
